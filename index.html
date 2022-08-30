@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_core_HW-17_kberezynets</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+    <div class="timer">01:00</div>
+    <div class="container">
+        <button id="start">Start game!</button>
+        <button id="checkResult" disabled>Check result</button>
+        <button id="newGame">New game</button>
+    </div>
+    <div  class="container">
+        <div id="startBox" class="box"></div>
+        <div id="finishBox" class="box"></div>
+        
+    </div>
+    <div id="modal-1" class="modal-bg container hide">
+        <div class="modal">
+            <h2 id="haveTime">You still have time, you sure? </h2>
+            <div class="container">
+                <button id="close" class="btn-modal">Close</button>
+                <button id="check" class="btn-modal">Check</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-2" class="modal-bg container hide">
+        <div class="modal">
+            <h2 id="modal2h2">It's a pity, but you lost</h2>
+            <div class="container">
+                <button id="close2" class="btn-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div  class="container">
+        <h5>&copy picture by Кіт Інжир. Уявний кіт Олени Павлової. The Imaginary Ukrainian Cat</h5>
+    </div>
+    
+
+    <script src="jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

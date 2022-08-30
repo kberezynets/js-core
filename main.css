@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer{
+    width: fit-content;
+    font-size: 80px;
+    margin: 30px auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 120px;
+    background-color: rgb(255, 80, 50);
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    /* outline: 3px solid rgba(255, 80, 50, 0.5); */
+}
+
+button:disabled, button:disabled:hover{
+    background-color: rgba(255, 80, 50, 0.5);
+}
+
+button:hover{
+    background-color: rgb(155, 50, 30);;
+}
+
+.box{
+    margin: 30px 30px;
+    width: 320px;
+    height: 320px;
+    border: 1px solid rgb(120, 120, 120);
+    box-shadow: 0 0 10px 0 black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part{
+    height: 80px;
+    width: 80px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url('./cat.jpg');
+    background-size: 320px 320px;
+}
+
+/* Modal boxes */
+.modal-bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(120, 120, 120, 0.8);
+}
+
+.modal{
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 3px;
+}
+
+h2{
+    margin: 20px auto;
+    text-align: center;
+    line-height: 60px;
+    border-top: 2px solid rgb(220, 220, 220);
+    border-bottom: 2px solid rgb(220, 220, 220);
+}
+
+.btn-modal{
+    width: 70px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+#check{
+    background-color: rgb(0, 128, 0);
+}
+
+#check:hover{
+    background-color: rgb(0, 74, 0);
+}
+
+h5{
+    margin-top: 60px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.hide{
+    display: none;
+}
